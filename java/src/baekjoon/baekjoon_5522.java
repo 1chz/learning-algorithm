@@ -7,7 +7,7 @@ import java.util.Scanner;
  * https://www.acmicpc.net/problem/5522
  * </a>
  */
-public class BOJ_5522 {
+public class baekjoon_5522 {
     
     public static void main (String[] args) {
         Scanner scanner = new Scanner(System.in);
