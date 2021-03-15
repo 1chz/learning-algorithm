@@ -9,7 +9,7 @@ import java.io.InputStreamReader;
  * https://www.acmicpc.net/problem/18108
  * </a>
  */
-public class baekjoon_18108 {
+public class BOJ_18108 {
     
     public static void main (String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
