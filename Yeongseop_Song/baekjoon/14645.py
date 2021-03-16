@@ -3,5 +3,4 @@
 
 N, K = map(int, input().split())
 _listAB = [list(map(int, input().split())) for _ in range(N)]
-print(_listAB)
 print("비와이")
