@@ -4,17 +4,14 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 /**
- * @see <a href="boj.kr/2914">저작권</a>
+ * @see <a href="boj.kr/2914">아스키코드</a>
  */
-public class P02914 {
+public class P11654 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         StringTokenizer st = new StringTokenizer(br.readLine());
 
-        double a = Integer.parseInt(st.nextToken());
-        double i = Integer.parseInt(st.nextToken()) - 1;
-
-        System.out.println(String.format("%.0f", Math.ceil(a * i) + 1));
+        System.out.println((int) st.nextToken().charAt(0));
     }
 }
