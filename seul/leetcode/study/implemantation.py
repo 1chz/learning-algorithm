@@ -230,5 +230,3 @@ def flood_fill(image: List[List[int]], sr: int, sc: int, newColor: int) -> List[
         new_start_tuple = changed.pop()
         change_UDLR(new_start_tuple, origin, changed)
     return image
-
-
