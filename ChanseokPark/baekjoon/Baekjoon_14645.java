@@ -1,4 +1,4 @@
-package baekjoon;
+package ChanseokPark.baekjoon;
 
 public class Baekjoon_14645 {
     /**
