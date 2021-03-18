@@ -4,14 +4,13 @@ import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
 /**
- * @see <a href="boj.kr/2914">아스키코드</a>
+ * @see <a href="boj.kr/10998">a*b</a>
  */
-public class P11654 {
+public class P10998 {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-
         StringTokenizer st = new StringTokenizer(br.readLine());
 
-        System.out.println((int) st.nextToken().charAt(0));
+        System.out.println(Integer.parseInt(st.nextToken()) * Integer.parseInt(st.nextToken()));
     }
 }
