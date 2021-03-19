@@ -11,3 +11,6 @@ class BOJ100TestCase(TestCase):
 
     def test_5554(self):
         self.assertEqual(boj5554.solution([31, 34, 7, 151]), [3, 43])
+
+    def test_18108(self):
+        self.assertEqual(boj18108.solution(2541), 1998)
