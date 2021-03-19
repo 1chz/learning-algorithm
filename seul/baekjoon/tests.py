@@ -22,3 +22,6 @@ class BOJ100TestCase(TestCase):
     def test_16394(self):
         self.assertEqual(boj16394.solution(2018), 72)
 
+    # 15733
+    def test_15733(self):
+        self.assertEqual(boj15733.solution(), "I'm Sexy")
