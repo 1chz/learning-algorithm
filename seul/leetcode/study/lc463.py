@@ -1,4 +1,5 @@
 # https://leetcode.com/problems/island-perimeter/
+# 37분걸림. 다른 답안 참고하고 풀었음
 # -> 이렇게 풀었더니 [[1]]같이 땅이 한개만 있을때에는 0 반환함
 def solution_first(grid: list) -> int:
     # 최대 100까지밖에 안됨 -> 브루트포스

@@ -8,3 +8,6 @@ class BOJ100TestCase(TestCase):
 
     def test_5522(self):
         self.assertEqual(boj5522.solution([1, 2, 3, 4, 5]), 15)
+
+    def test_5554(self):
+        self.assertEqual(boj5554.solution([31, 34, 7, 151]), [3, 43])
