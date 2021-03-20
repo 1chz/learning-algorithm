@@ -30,5 +30,6 @@ bfs(1)
 for i in visited:
     if i == True:
         count+=1
+        
 
 print(count-1)
