@@ -20,7 +20,7 @@ public class BOJ_17298 {
         int N = parseInt(br.readLine());
         
         int[] seq = new int[N];
-        Stack<Integer> stack = new Stack<Integer>();
+        Stack<Integer> stack = new Stack<>();
         StringTokenizer st = new StringTokenizer(br.readLine());
         
         for (int i = 0; i < N; i++) {
