@@ -1,4 +1,4 @@
-package baekjoon.bfs_dfs;
+package baekjoon.stack;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -34,7 +34,7 @@ public class BOJ_10773 {
             sum += stack.pop();
         }
         System.out.println(sum);
-        
+        br.close();
     }
     
 }

@@ -1,4 +1,4 @@
-package baekjoon.bfs_dfs;
+package baekjoon.stack;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -38,6 +38,7 @@ public class BOJ_1874 {
             stringBuilder.append('-').append('\n');
         }
         System.out.println(stringBuilder);
+        br.close();
     }
     
 }
