@@ -6,42 +6,49 @@ import java.util.*;
 import static java.lang.Integer.parseInt;
 
 /**
- * @see <a href="https://www.acmicpc.net/problem/10845">
- * https://www.acmicpc.net/problem/10845
+ * @see <a href="https://www.acmicpc.net/problem/10866">
+ * https://www.acmicpc.net/problem/10866
  * </a>
  */
-public class BOJ_10845 {
+public class BOJ_10866 {
     
     public static void main (String[] args) throws IOException {
         
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         
-        Queue<Integer> queue = new LinkedList<>();
+        Deque<Integer> deque = new LinkedList<>();
         int iNum = 0;
         int N = parseInt(br.readLine());
         
         while (0 < N--) {
             StringTokenizer st = new StringTokenizer(br.readLine());
             String s = st.nextToken();
-            if ("push".equals(s)) {
+            if ("push_front".equals(s)) {
                 iNum = parseInt(st.nextToken());
-                queue.add(iNum);
+                deque.addFirst(iNum);
             }
-            else if ("pop".equals(s)) {
-                bw.write((queue.isEmpty() ? -1 : queue.poll()) + "\n");
+            else if ("push_back".equals(s)) {
+                iNum = parseInt(st.nextToken());
+                deque.addLast(iNum);
+            }
+            else if ("pop_front".equals(s)) {
+                bw.write((deque.isEmpty() ? -1 : deque.pollFirst()) + "\n");
+            }
+            else if ("pop_back".equals(s)) {
+                bw.write((deque.isEmpty() ? -1 : deque.pollLast()) + "\n");
             }
             else if ("size".equals(s)) {
-                bw.write((queue.size()) + "\n");
+                bw.write((deque.size()) + "\n");
             }
             else if ("empty".equals(s)) {
-                bw.write((queue.isEmpty() ? 1 : 0) + "\n");
+                bw.write((deque.isEmpty() ? 1 : 0) + "\n");
             }
             else if ("front".equals(s)) {
-                bw.write((queue.isEmpty() ? -1 : queue.peek()) + "\n");
+                bw.write((deque.isEmpty() ? -1 : deque.peekFirst()) + "\n");
             }
             else if ("back".equals(s)) {
-                bw.write((queue.isEmpty() ? -1 : iNum) + "\n");
+                bw.write((deque.isEmpty() ? -1 : deque.peekLast()) + "\n");
             }
         }
         bw.flush();
