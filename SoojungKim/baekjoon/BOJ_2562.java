@@ -13,8 +13,7 @@ public class BOJ_2562 {
         Map<Integer, Integer> map = new HashMap<>();
 
         for (Integer i = 1; i < 10; i++) {
-            int tmp = Integer.parseInt(scanner.next());
-            map.put(i, tmp);
+            map.put(i, scanner.nextInt());
         }
 
         int key = map.entrySet().stream().max((entry1, entry2) -> entry1.getValue() > entry2.getValue() ? 1: -1).get().getKey();
