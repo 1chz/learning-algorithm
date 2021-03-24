@@ -23,8 +23,7 @@ public class BOJ_1021 {
         StringTokenizer st = new StringTokenizer(br.readLine());
         int N = parseInt(st.nextToken());
         int M = parseInt(st.nextToken());
-        int answer = 0;
-        int num;
+        int ans = 0;
         
         for (int i = 1; i <= N; i++) {
             list.add(i);
@@ -33,12 +32,11 @@ public class BOJ_1021 {
         st = new StringTokenizer(br.readLine());
         
         for (int i = 0; i < M; i++) {
-            num = parseInt(st.nextToken());
-            boolean flag = true;
-            while (flag) {
+            int num = parseInt(st.nextToken());
+            while (true) {
                 if (list.get(0) == num) {
                     list.remove(0);
-                    flag = false;
+                    break;
                 }
                 else {
                     if (list.indexOf(num) <= list.size() / 2) {
@@ -47,13 +45,13 @@ public class BOJ_1021 {
                     else {
                         list.add(0, list.remove(list.size() - 1));
                     }
-                    answer++;
+                    ans++;
                 }
             }
         }
-        
-        bw.write(Integer.toString(answer));
-        
+    
+        bw.write(Integer.toString(ans));
+    
         bw.flush();
         bw.close();
         br.close();
