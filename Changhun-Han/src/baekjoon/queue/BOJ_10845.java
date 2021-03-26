@@ -1,7 +1,9 @@
 package baekjoon.queue;
 
 import java.io.*;
-import java.util.*;
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.StringTokenizer;
 
 import static java.lang.Integer.parseInt;
 
