@@ -5,15 +5,18 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 /**
- * @see <a href="https://www.acmicpc.net/problem/14645">
- * https://www.acmicpc.net/problem/14645
+ * @see <a href="https://www.acmicpc.net/problem/1550">
+ * https://www.acmicpc.net/problem/1550 16진수
  * </a>
  */
-public class BOJ_14645 {
+public class BOJ_1550 {
+
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        br.readLine();
-        System.out.println("비와이");
+
+        int decimal = Integer.parseInt(br.readLine(),16);
+
+        System.out.println(decimal);
         br.close();
     }
 }
