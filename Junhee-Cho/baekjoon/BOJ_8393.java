@@ -4,15 +4,20 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
- * @see <a href="https://www.acmicpc.net/problem/14645">
- * https://www.acmicpc.net/problem/14645
+/**
+ * @see <a href="https://www.acmicpc.net/problem/8393">
+ * https://www.acmicpc.net/problem/8393 합
  * </a>
  */
-public class BOJ_14645 {
+public class BOJ_8393 {
+
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        br.readLine();
-        System.out.println("비와이");
+
+        final int value = Integer.parseInt(br.readLine());
+        final double result = (value + 1) * (value / 2.0);
+
+        System.out.println((int)result);
         br.close();
     }
 }
