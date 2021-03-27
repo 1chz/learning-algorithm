@@ -41,11 +41,3 @@ while 1:
 
         print(count)
 
-
-
-
-
-
-
-
-
