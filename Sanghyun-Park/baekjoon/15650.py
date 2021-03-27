@@ -6,23 +6,21 @@ arr=[i for i in range(1,N+1)]
 
 def n_m(arr_1,m,c_n):
     arr_2=[]+arr_1
-    c_n_2=c_n
+    c_n2=c_n
     if m==1:
         for j in arr_1:
             print(c_n,j,sep=' ')
     else:
-        for idx,i in enumerate(arr_2):
-            if arr_1==[]:
-                arr_1=arr_2[idx:]
-            c_n=c_n_2
-            arr_1.remove(i)
-
+        for idx,v in enumerate(arr_1):
+            c_n=c_n2
             if c_n=='':
-                c_n=str(i)
+                c_n=str(v)
             else:
-                c_n+=' '+str(i)
+                c_n+=' '+str(v)
+            arr_2.remove(v)
+            n_m(arr_2,m-1,c_n)
 
-            n_m(arr_1,m-1,c_n)
+
 
 if M==1:
     for i in arr:
