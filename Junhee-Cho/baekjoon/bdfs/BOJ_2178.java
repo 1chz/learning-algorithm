@@ -75,45 +75,46 @@ class Solution{
                 && movedRow < maze.length && movedColumn < maze[0].length
                 && maze[movedRow][movedColumn] == 1;
     }
+
+    enum Direction {
+        Down(1, 0),
+        Right(0, 1),
+        Up(-1, 0),
+        Left(0, -1);
+
+        private int row;
+        private int column;
+
+        Direction(int row, int column){
+            this.row = row;
+            this.column = column;
+        }
+
+        public int getRow() {
+            return row;
+        }
+
+        public int getColumn() {
+            return column;
+        }
+    }
+
+    class Position {
+        private final int row;
+        private final int column;
+
+        Position(int row, int column) {
+            this.row = row;
+            this.column = column;
+        }
+
+        public int getRow() {
+            return row;
+        }
+
+        public int getColumn() {
+            return column;
+        }
+    }
 }
 
-enum Direction {
-    Down(1, 0),
-    Right(0, 1),
-    Up(-1, 0),
-    Left(0, -1);
-
-    private int row;
-    private int column;
-
-    Direction(int row, int column){
-        this.row = row;
-        this.column = column;
-    }
-
-    public int getRow() {
-        return row;
-    }
-
-    public int getColumn() {
-        return column;
-    }
-}
-
-class Position {
-    private final int row;
-    private final int column;
-
-    Position(int row, int column) {
-        this.row = row;
-        this.column = column;
-    }
-
-    public int getRow() {
-        return row;
-    }
-
-    public int getColumn() {
-        return column;
-    }
-}
