@@ -12,6 +12,7 @@ for i in range(N):
     if wd == 'KBS2':
         count2=i
 
+
 def print1(pos):
     return('1'*(pos)+'4'*(pos))
 
