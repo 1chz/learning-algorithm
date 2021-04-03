@@ -1,6 +1,5 @@
 import java.util.Scanner;
 
-import static com.sun.tools.doclint.Entity.or;
 
 public class BOJ_10797 {
     public static void main(String[] args) {
