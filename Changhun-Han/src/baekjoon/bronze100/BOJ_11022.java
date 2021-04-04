@@ -6,37 +6,31 @@ import java.util.StringTokenizer;
 import static java.lang.Integer.parseInt;
 
 /**
- * @see <a href="https://www.acmicpc.net/problem/2953">
- * https://www.acmicpc.net/problem/2953
+ * @see <a href="https://www.acmicpc.net/problem/11022">
+ * https://www.acmicpc.net/problem/11022
  * </a>
  */
-public class BOJ_2953 {
+public class BOJ_11022 {
     
     public static void main (String[] args) throws IOException {
-        
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        StringBuilder sb = new StringBuilder();
         
-        int highestScore = 0;
-        int higher = 0;
+        int TC = parseInt(br.readLine());
         
-        for(int i = 1; i <= 5; i++) {
+        for(int i = 1; i <= TC; i++) {
             StringTokenizer st = new StringTokenizer(br.readLine());
-            int sum = 0;
-            while(st.hasMoreTokens()) {
-                sum += parseInt(st.nextToken());
-            }
-            if(sum > highestScore) {
-                highestScore = sum;
-                higher = i;
-            }
+            int A = parseInt(st.nextToken());
+            int B = parseInt(st.nextToken());
+            int SUM = A + B;
+            sb.append("Case #" + i + ": " + A + " + " + B + " = " + SUM + "\n");
         }
         
-        bw.write(higher + " " + highestScore);
+        bw.write(sb.toString());
         bw.flush();
         bw.close();
         br.close();
-        
     }
     
 }
