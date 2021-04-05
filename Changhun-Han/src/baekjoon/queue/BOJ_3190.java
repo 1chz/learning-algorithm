@@ -4,6 +4,7 @@ import static java.lang.Integer.parseInt;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.ArrayDeque;
@@ -29,6 +30,16 @@ public class BOJ_3190 {
 
     /**
      * Map 구조 <br/>
+     * ■ = 벽 <br/>
+     * □ = 빈땅 <br/>
+     * <br/>
+     * N = 3 <br/>
+     * ■■■■■ <br/>
+     * ■□□□■ <br/>
+     * ■□□□■ <br/>
+     * ■□□□■ <br/>
+     * ■■■■■ <br/>
+     * <br/>
      * 0 : 아무것도 없음 <br/>
      * 1 : 사과 <br/>
      * 2 : 뱀 <br/>
@@ -47,13 +58,23 @@ public class BOJ_3190 {
     //----------------------------- init game -----------------------------//
 
     public static void main(String[] args) throws Exception {
+        init();
+        solution();
+
+        bw.write(sb.toString());
+        bw.flush();
+        bw.close();
+        br.close();
+    }
+
+    private static void init() throws IOException {
         br = new BufferedReader(new InputStreamReader(System.in));
         bw = new BufferedWriter(new OutputStreamWriter(System.out));
         sb = new StringBuilder();
 
         N = parseInt(br.readLine());
         K = parseInt(br.readLine());
-        map = new int[N + 1][N + 1];
+        map = new int[N + 2][N + 2];
 
         for (int i = 0; i < K; i++) {
             StringTokenizer st = new StringTokenizer(br.readLine());
@@ -72,24 +93,16 @@ public class BOJ_3190 {
             dirList[i] = getDirection(st.nextToken());
         }
 
-        solution();
-
-        bw.write(sb.toString());
-        bw.flush();
-        bw.close();
-        br.close();
-    }
-
-    //----------------------------- solution -----------------------------//
-
-    private static void solution() {
-
         // todo 시작 방향은 오른쪽
         map[1][1] = 2;
 
         // todo 시작 위치는 (1,1)
         snake.add(new Point(1, 1));
+    }
 
+    //----------------------------- solution -----------------------------//
+
+    private static void solution() {
         while (true) {
             setDirection();
 
