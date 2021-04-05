@@ -44,6 +44,8 @@ public class BOJ_3190 {
     private static int second = 0;
     private static int result = 0;
 
+    //----------------------------- init game -----------------------------//
+
     public static void main(String[] args) throws Exception {
         br = new BufferedReader(new InputStreamReader(System.in));
         bw = new BufferedWriter(new OutputStreamWriter(System.out));
@@ -77,43 +79,35 @@ public class BOJ_3190 {
         bw.close();
         br.close();
     }
-    
-    private static void solution () {
 
+    //----------------------------- solution -----------------------------//
+
+    private static void solution() {
         map[1][1] = 2;
         snake.add(new Point(1, 1));
 
         while (true) {
-            // TODO: 방향 설정
-            turnAround();
+            setDirection();
 
-            // TODO: 머리가 다음칸으로 이동하며 몸통이 늘어남
-            int nextX = snake.getFirst()
-                    .getX() + dx[direction];
+            int x = snake.getFirst().getX() + dx[direction];
+            int y = snake.getFirst().getY() + dy[direction];
 
-            int nextY = snake.getFirst()
-                    .getY() + dy[direction];
-
-            // TODO: 머리가 벽과 부딪히면 종료
-            if (nextX <= 0 || nextX > N || nextY <= 0 || nextY > N) {
+            if (isWall(x, y)) {
                 sb.append(result + 1);
                 break;
             }
 
-            // TODO: 머리가 몸통과 부딪히면 종료
-            if (map[nextX][nextY] == 2) {
+            if (isSnakeBody(x, y)) {
                 sb.append(result + 1);
                 break;
             }
 
-            // TODO: 이동한 칸에 사과가 있다면, 사과를 먹고 꼬리를 유지
-            if (map[nextX][nextY] == 1) {
-                headForward(nextX, nextY);
+            if (isApple(x, y)) {
+                headForward(x, y);
             }
 
-            // TODO: 이동한 칸에 사과가 없다면, 꼬리를 자름
-            else if (map[nextX][nextY] == 0) {
-                headForward(nextX, nextY);
+            if (isEmpty(x, y)) {
+                headForward(x, y);
                 removeTail();
             }
 
@@ -121,12 +115,7 @@ public class BOJ_3190 {
         }
     }
 
-    private static void turnAround() {
-        if (second < L && secList[second] == result) {
-            direction = (direction + dirList[second]) % 4;
-            second++;
-        }
-    }
+    //----------------------------- private methods -----------------------------//
 
     private static int getDirection(String s) {
         if ("D".equals(s)) {
@@ -134,6 +123,29 @@ public class BOJ_3190 {
         } else {
             return 3;
         }
+    }
+
+    private static void setDirection() {
+        if (second < L && secList[second] == result) {
+            direction = (direction + dirList[second]) % 4;
+            second++;
+        }
+    }
+
+    private static boolean isWall(int x, int y) {
+        return x <= 0 || x > N || y <= 0 || y > N;
+    }
+
+    private static boolean isSnakeBody(int x, int y) {
+        return map[x][y] == 2;
+    }
+
+    private static boolean isApple(int x, int y) {
+        return map[x][y] == 1;
+    }
+
+    private static boolean isEmpty(int x, int y) {
+        return map[x][y] == 0;
     }
 
     private static void headForward(int nextX, int nextY) {
@@ -145,6 +157,8 @@ public class BOJ_3190 {
         Point tail = snake.removeLast();
         map[tail.getX()][tail.getY()] = 0;
     }
+
+    //----------------------------- inner class -----------------------------//
 
     private static class Point {
 
