@@ -60,12 +60,10 @@ public class BOJ_3190 {
     public static void main(String[] args) throws Exception {
         init();
         solution();
-
-        bw.write(sb.toString());
-        bw.flush();
-        bw.close();
-        br.close();
+        print();
     }
+
+    //----------------------------- init -----------------------------//
 
     private static void init() throws IOException {
         br = new BufferedReader(new InputStreamReader(System.in));
@@ -130,6 +128,15 @@ public class BOJ_3190 {
 
             result++;
         }
+    }
+
+    //----------------------------- print -----------------------------//
+
+    private static void print() throws IOException {
+        bw.write(sb.toString());
+        bw.flush();
+        bw.close();
+        br.close();
     }
 
     //----------------------------- private methods -----------------------------//
