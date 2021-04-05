@@ -1,4 +1,6 @@
-package baekjoon.queue;
+/**************
+ https://www.acmicpc.net/problem/3190
+ *************/
 
 import static java.lang.Integer.parseInt;
 
@@ -11,13 +13,8 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.StringTokenizer;
 
-/**
- * @see <a href="https://www.acmicpc.net/problem/3190">
- * https://www.acmicpc.net/problem/3190
- * </a>
- */
 public class BOJ_3190 {
-    
+
     private static BufferedReader br;
     private static BufferedWriter bw;
     private static StringBuilder sb;
@@ -28,22 +25,20 @@ public class BOJ_3190 {
     private static int K;
     private static int L;
 
-    /**
-     * Map 구조 <br/>
-     * ■ = 벽 <br/>
-     * □ = 빈땅 <br/>
-     * <br/>
-     * N = 3 <br/>
-     * ■■■■■ <br/>
-     * ■□□□■ <br/>
-     * ■□□□■ <br/>
-     * ■□□□■ <br/>
-     * ■■■■■ <br/>
-     * <br/>
-     * 0 : 아무것도 없음 <br/>
-     * 1 : 사과 <br/>
-     * 2 : 뱀 <br/>
-     */
+    /**************
+
+     Map 구조
+
+     ■■■■■
+     ■□□□■    N = 3
+     ■□□□■    ■ = 벽
+     ■□□□■    □ = 빈땅
+     ■■■■■
+
+     0 : 아무것도 없음
+     1 : 사과
+     2 : 뱀
+     **************/
     private static int[][] map;
     private static int[] secList;
     private static int[] dirList;
@@ -74,17 +69,19 @@ public class BOJ_3190 {
         K = parseInt(br.readLine());
         map = new int[N + 2][N + 2];
 
+        // todo 사과 위치
         for (int i = 0; i < K; i++) {
             StringTokenizer st = new StringTokenizer(br.readLine());
-            int row = parseInt(st.nextToken());
-            int col = parseInt(st.nextToken());
-            map[row][col] = 1;
+            int x = parseInt(st.nextToken());
+            int y = parseInt(st.nextToken());
+            map[x][y] = 1;
         }
 
         L = parseInt(br.readLine());
         secList = new int[L];
         dirList = new int[L];
 
+        // todo 시간, 방향 정보
         for (int i = 0; i < L; i++) {
             StringTokenizer st = new StringTokenizer(br.readLine());
             secList[i] = parseInt(st.nextToken());
@@ -211,5 +208,5 @@ public class BOJ_3190 {
         }
 
     }
-    
+
 }
