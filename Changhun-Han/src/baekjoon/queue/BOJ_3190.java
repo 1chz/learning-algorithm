@@ -55,7 +55,7 @@ public class BOJ_3190 {
     private static int second = 0;
     private static int result = 0;
 
-    //----------------------------- init game -----------------------------//
+    //----------------------------- Dummy -----------------------------//
 
     public static void main(String[] args) throws Exception {
         init();
