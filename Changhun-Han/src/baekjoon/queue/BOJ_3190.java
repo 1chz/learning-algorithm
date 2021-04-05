@@ -180,9 +180,9 @@ public class BOJ_3190 {
         return map[x][y] == 0;
     }
 
-    private static void headForward(int nextX, int nextY) {
-        map[nextX][nextY] = 2;
-        snake.addFirst(new Point(nextX, nextY));
+    private static void headForward(int x, int y) {
+        map[x][y] = 2;
+        snake.addFirst(new Point(x, y));
     }
 
     private static void removeTail() {
