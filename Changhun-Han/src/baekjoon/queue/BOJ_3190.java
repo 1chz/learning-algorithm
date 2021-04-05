@@ -1,6 +1,4 @@
-/**************
- https://www.acmicpc.net/problem/3190
- *************/
+package baekjoon.queue;
 
 import static java.lang.Integer.parseInt;
 
@@ -13,6 +11,11 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 import java.util.StringTokenizer;
 
+/**
+ * @see <a href="https://www.acmicpc.net/problem/3190">
+ * https://www.acmicpc.net/problem/3190
+ * </a>
+ */
 public class BOJ_3190 {
 
     private static BufferedReader br;
@@ -25,20 +28,22 @@ public class BOJ_3190 {
     private static int K;
     private static int L;
 
-    /**************
-
-     Map 구조
-
-     ■■■■■
-     ■□□□■    N = 3
-     ■□□□■    ■ = 벽
-     ■□□□■    □ = 빈땅
-     ■■■■■
-
-     0 : 아무것도 없음
-     1 : 사과
-     2 : 뱀
-     **************/
+    /**
+     * Map 구조 <br/>
+     * ■ = 벽 <br/>
+     * □ = 빈땅 <br/>
+     * <br/>
+     * N = 3 <br/>
+     * ■■■■■ <br/>
+     * ■□□□■ <br/>
+     * ■□□□■ <br/>
+     * ■□□□■ <br/>
+     * ■■■■■ <br/>
+     * <br/>
+     * 0 : 아무것도 없음 <br/>
+     * 1 : 사과 <br/>
+     * 2 : 뱀 <br/>
+     */
     private static int[][] map;
     private static int[] secList;
     private static int[] dirList;
