@@ -1,4 +1,4 @@
-package baekjoon.queue;
+package baekjoon.bronze100;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
