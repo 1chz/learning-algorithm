@@ -17,12 +17,6 @@ import java.util.StringTokenizer;
  */
 public class BOJ_3190 {
     
-    /**
-     * Map 구조 <br/>
-     * 0 : 아무것도 없음 <br/>
-     * 1 : 사과 <br/>
-     * 2 : 뱀 <br/>
-     */
     private static BufferedReader br;
     private static BufferedWriter bw;
     private static StringBuilder sb;
@@ -33,6 +27,12 @@ public class BOJ_3190 {
     private static int K;
     private static int L;
 
+    /**
+     * Map 구조 <br/>
+     * 0 : 아무것도 없음 <br/>
+     * 1 : 사과 <br/>
+     * 2 : 뱀 <br/>
+     */
     private static int[][] map;
     private static int[] secList;
     private static int[] dirList;
