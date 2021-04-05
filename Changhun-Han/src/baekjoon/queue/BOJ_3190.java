@@ -84,10 +84,10 @@ public class BOJ_3190 {
 
     private static void solution() {
 
-        //todo 시작 방향은 오른쪽
+        // todo 시작 방향은 오른쪽
         map[1][1] = 2;
 
-        //todo 시작 위치는 (1,1)
+        // todo 시작 위치는 (1,1)
         snake.add(new Point(1, 1));
 
         while (true) {
