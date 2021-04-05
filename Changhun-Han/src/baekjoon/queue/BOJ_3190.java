@@ -93,8 +93,8 @@ public class BOJ_3190 {
         while (true) {
             setDirection();
 
-            int x = snake.getFirst().getX() + dx[direction];
-            int y = snake.getFirst().getY() + dy[direction];
+            int x = moveToX();
+            int y = moveToY();
 
             if (isWall(x, y)) {
                 sb.append(result + 1);
@@ -134,6 +134,14 @@ public class BOJ_3190 {
             direction = (direction + dirList[second]) % 4;
             second++;
         }
+    }
+
+    private static int moveToX() {
+        return snake.getFirst().getX() + dx[direction];
+    }
+
+    private static int moveToY() {
+        return snake.getFirst().getY() + dy[direction];
     }
 
     private static boolean isWall(int x, int y) {
