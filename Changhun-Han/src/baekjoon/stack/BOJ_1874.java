@@ -1,11 +1,11 @@
 package baekjoon.stack;
 
+import static java.lang.Integer.parseInt;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.Stack;
-
-import static java.lang.Integer.parseInt;
 
 /**
  * @see <a href="https://www.acmicpc.net/problem/1874">
@@ -24,7 +24,7 @@ public class BOJ_1874 {
         while (N-- > 0) {
             int value = parseInt(br.readLine());
             if (pre < value) {
-                for (int i = pre + 1; i <= value; i++) {
+                for (int i = pre + 1; i <= value; i++ ) {
                     stack.push(i);
                     stringBuilder.append('+').append('\n');
                 }
