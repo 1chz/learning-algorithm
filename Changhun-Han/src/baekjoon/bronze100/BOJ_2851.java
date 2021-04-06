@@ -43,21 +43,18 @@ public class BOJ_2851 {
                 100 - scores[scores.length - 1] < 0 ?
                         scores[scores.length - 1] - 100
                         :
-                        100 - scores[scores.length - 1];
+                                100 - scores[scores.length - 1];
 
         int o2 =
                 100 - scores[scores.length - 2] < 0 ?
                         scores[scores.length - 2] - 100
                         :
-                        100 - scores[scores.length - 2];
+                                100 - scores[scores.length - 2];
 
-        if (o1 == o2) {
+        if (o1 == o2 || o1 < o2) {
             sb.append(scores[scores.length - 1] + "\n");
         }
-        else if (o1 < o2) {
-            sb.append(scores[scores.length - 1] + "\n");
-        }
-        else if (o1 > o2) {
+        else {
             sb.append(scores[scores.length - 2] + "\n");
         }
 
