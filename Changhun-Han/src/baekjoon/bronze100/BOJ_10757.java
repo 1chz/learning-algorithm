@@ -4,20 +4,17 @@ import java.io.*;
 import java.math.BigInteger;
 import java.util.StringTokenizer;
 
-import static java.lang.Integer.parseInt;
-import static java.lang.String.valueOf;
-
 /**
  * @see <a href="https://www.acmicpc.net/problem/10757">
  * https://www.acmicpc.net/problem/10757
  * </a>
  */
 public class BOJ_10757 {
-
-    public static void main(String[] args) throws IOException {
+    
+    public static void main (String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-
+        
         StringTokenizer st = new StringTokenizer(br.readLine());
         BigInteger A = new BigInteger(st.nextToken());
         BigInteger B = new BigInteger(st.nextToken());
@@ -27,5 +24,5 @@ public class BOJ_10757 {
         bw.close();
         br.close();
     }
-
+    
 }
