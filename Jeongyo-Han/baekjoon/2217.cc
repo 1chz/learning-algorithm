@@ -12,20 +12,20 @@ int main()
 
   int n;
   cin >> n;
-  vector<int> v(n);
+  vector<long long> v(n);
 
   for (int i=0; i<n; i++) 
-	cin >> v[i];
+    cin >> v[i];
 
   sort(v.begin(), v.end());
 
-  int ans = v[n-1];
+  long long ans = v[n-1];
   for (int i=n-2; i>=0; i--)
   {
-	int weight = v[i] * (n-i);
-	if (ans < weight) ans = weight;
-	break;
+    long long weight = v[i] * (n-i);
+    if (ans < weight) ans = weight;
   }
 
   cout << ans;
 }
+
