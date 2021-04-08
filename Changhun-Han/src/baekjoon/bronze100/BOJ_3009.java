@@ -21,6 +21,7 @@ public class BOJ_3009 {
         int[] point2 = Stream.of(br.readLine().split(" "))
                              .mapToInt(Integer :: parseInt)
                              .toArray();
+    
         int[] point3 = Stream.of(br.readLine().split(" "))
                              .mapToInt(Integer :: parseInt)
                              .toArray();
