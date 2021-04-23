@@ -1,8 +1,6 @@
 package baekjoon.stack;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.util.Stack;
 
 import static java.lang.Integer.parseInt;
@@ -16,28 +14,32 @@ public class BOJ_1874 {
     
     public static void main (String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringBuilder stringBuilder = new StringBuilder();
+        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+        StringBuilder sb = new StringBuilder();
+    
         Stack<Integer> stack = new Stack<>();
-        
+    
         int N = parseInt(br.readLine());
         int pre = 0;
-        while (N-- > 0) {
+        while(N-- > 0) {
             int value = parseInt(br.readLine());
-            if (pre < value) {
-                for (int i = pre + 1; i <= value; i++) {
+            if(pre < value) {
+                for(int i = pre + 1; i <= value; i++) {
                     stack.push(i);
-                    stringBuilder.append('+').append('\n');
+                    sb.append('+').append('\n');
                 }
                 pre = value;
             }
-            else if (stack.peek() != value) {
+            else if(stack.peek() != value) {
                 System.out.println("NO");
                 return;
             }
             stack.pop();
-            stringBuilder.append('-').append('\n');
+            sb.append('-').append('\n');
         }
-        System.out.println(stringBuilder);
+        bw.write(sb.toString());
+        bw.flush();
+        bw.close();
         br.close();
     }
     
