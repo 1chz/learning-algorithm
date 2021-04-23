@@ -1,4 +1,4 @@
-
+# 뿌요뿌요 (Puyo Puyo)
 from collections import deque
 
 dx = [0, -1, 0, 1]
@@ -6,16 +6,16 @@ dy = [-1, 0, 1, 0]
 
 def bfs(x, y, flag):
     q = deque()
+    visited = [[0]*6 for _ in range(12)]
     q.append([x, y])
     cnt = 1
-    visited = [[0]*6 for _ in range(12)]
     visited[x][y] = 1
     while q:
-        pos_x, pos_y = q.popleft()
+        x, y = q.popleft()
         for i in range(4):
-            nx, ny = pos_x + dx[i], pos_y + dy[i]
+            nx, ny = x + dx[i], y + dy[i]
             if 0 <= nx < 12 and 0 <= ny < 6:
-                if not visited[nx][ny] and board[nx][ny] == board[pos_x][pos_y]:
+                if board[nx][ny] == board[x][y] and not visited[nx][ny]:
                     cnt += 1
                     visited[nx][ny] = 1
                     q.append([nx, ny])
@@ -26,7 +26,7 @@ def bfs(x, y, flag):
             for j in range(6):
                 if visited[i][j] == 1:
                     board[i][j] = '.'
-
+    
     return flag
 
 def check_fall():
@@ -40,7 +40,7 @@ def check_fall():
                         board[k-1][j] = board[i][j]
                         break
                 board[i][j] = '.'
-
+                    
 
 board = []
 for _ in range(12):
@@ -53,7 +53,7 @@ while True:
         for j in range(6):
             if board[i][j] != '.':
                 cnt = bfs(i, j, cnt)
-        
+    
     if cnt == 0:
         print(ans)
         break
