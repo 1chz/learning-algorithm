@@ -30,7 +30,6 @@ def check(k):
         return True
 
 
-
 prime[1]=0
 for k in range(N,1040001):
     if prime[k] and check(k):
