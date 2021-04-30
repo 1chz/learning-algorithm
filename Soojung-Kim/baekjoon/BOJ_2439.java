@@ -8,9 +8,16 @@ public class BOJ_2439 {
 
         int n = scanner.nextInt();
 
-        StringBuilder sb = new StringBuilder();
         for (int i = 0; i < n; i++) {
-            sb.append("*");
+            StringBuilder sb = new StringBuilder();
+            for (int j = 0; j < n - i - 1; j++) {
+                sb.append(" ");
+            }
+
+            for (int j = 0; j < i + 1; j++) {
+                sb.append("*");
+            }
+
             System.out.println(sb.toString());
         }
     }
