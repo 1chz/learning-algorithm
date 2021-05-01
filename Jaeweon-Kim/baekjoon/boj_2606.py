@@ -20,4 +20,3 @@ while q:
             q.append(i)
 
 print(len(visited)-1)
-    
