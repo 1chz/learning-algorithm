@@ -18,7 +18,6 @@ def bfs(x, y):
                     cnt += 1
     max_val = max(max_val, cnt)
 
-
 n,m,k = map(int, input().split())
 visited = [[0] * m for _ in range(n)]
 board = [[0] * m for _ in range(n)]
