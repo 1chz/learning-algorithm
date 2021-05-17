@@ -12,7 +12,7 @@ import static java.lang.Integer.parseInt;
  * https://www.acmicpc.net/problem/1406
  * </a>
  */
-public class BOJ1406 {
+public class BOJ_1406 {
     
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
