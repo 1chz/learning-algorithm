@@ -1,56 +1,64 @@
+package data_structure;
+
 import java.util.Arrays;
 
 public class ArrayList<E> {
     
+    private static final int DEFAULT_CAPACITY = 10;
+    
+    private int size;
     private E[] o;
-    private int size = 0;
     
     public ArrayList() {
-        this.o = (E[]) new Object[10];
+        this.size = 0;
+        this.o = (E[]) new Object[DEFAULT_CAPACITY];
     }
     
-    public E get(int i) {
-        if(i > size - 1) {
+    public ArrayList(int capacity) {
+        this.size = 0;
+        this.o = (E[]) new Object[capacity];
+    }
+    
+    public E get(int index) {
+        if(index > size - 1) {
             throw new IndexOutOfBoundsException("Index is too big !");
         }
-        return (E) o[i];
+        return o[index];
     }
     
     public int size() {
         return this.size;
     }
     
-    public void add(E num) {
+    public void add(E e) {
         if(size == o.length) {
-            this.o = Arrays.copyOf(o, o.length + 10);
+            this.o = Arrays.copyOf(o, o.length + DEFAULT_CAPACITY);
         }
-        this.o[size] = num;
-        size++;
+        this.o[size++] = e;
     }
     
-    public void add(int i, E num) {
-        if(i > size - 1) {
+    public void add(int index, E e) {
+        if(index > size - 1) {
             throw new IndexOutOfBoundsException("Index is too big !");
         }
         if(size == o.length) {
-            this.o = Arrays.copyOf(o, o.length + 10);
+            this.o = Arrays.copyOf(o, o.length + DEFAULT_CAPACITY);
         }
-        for(int j = size - 1; j >= i; j--) {
-            this.o[j + 1] = o[j];
+        for(int i = size - 1; i >= index; i--) {
+            this.o[i + 1] = o[i];
         }
-        this.o[i] = num;
+        this.o[index] = e;
         size++;
     }
     
-    public void remove(int i) {
-        if(i > size - 1) {
+    public void remove(int index) {
+        if(index > size - 1) {
             throw new IndexOutOfBoundsException("Index is too big !");
         }
-        for(int j = i + 1; j < size; j++) {
-            this.o[j - 1] = o[j];
+        for(int i = index + 1; i < size; i++) {
+            this.o[i - 1] = o[i];
         }
-        this.o[size] = null;
-        size--;
+        this.o[size--] = null;
     }
     
     @Override
