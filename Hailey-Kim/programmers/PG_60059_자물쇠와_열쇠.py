@@ -13,7 +13,6 @@ return true if the key can open the lock.
 
 # rotate a two-dimensional array by 90 degrees
 
-
 def rotate_by_90deg(matrix):
     n = len(matrix)
     m = len(matrix[0])
@@ -31,17 +30,17 @@ def rotate_by_90deg(matrix):
 
 
 def check(new_lock):
-	n = len(new_lock) // 3
-
+    n = len(new_lock) // 3
+    
     for i in range(n, n * 2):
     	for j in range(n, n * 2):
-        	if new_lock[i][j] != 1:
-            	return False
+            if new_lock[i][j] != 1:
+                return False
     return True
     
 # solution
 def solution(key, lock):
-	n = len(lock)
+    n = len(lock)
     m = len(key)
     # initialize a new lock, 3x3 of original lock
     # in each dir
@@ -50,25 +49,25 @@ def solution(key, lock):
     # have the values of the original lock
     # at the middle of the new lock
     for i in range(n):
-    	for j in range(n):
-        	new_lock[n + i][n + j] = lock[i][j] 
+        for j in range(n):
+            new_lock[n + i][n + j] = lock[i][j] 
             
     # check the key for the lock in 360deg
     for _ in range(4):
     	key = rotate_by_90deg(key)
         for x in range(n*2):
-        	for y in range(n*2):
+            for y in range(n*2):
             	# test the key
                 for i in range(m):
-                	for j in range(m):
-                    	new_lock[x + i][y + j] += key[i][j]
+                    for j in range(m):
+                        new_lock[x + i][y + j] += key[i][j]
                 # check if right
                 if check(new_lock):
                 	return True
                     
                 # if not reset
                 for i in range(m):
-                	for j in range(m):
-                    	new_lock[x + i][y + j] -= key[i][j]
+                    for j in range(m):
+                        new_lock[x + i][y + j] -= key[i][j]
                 
-     return False
+    return False
