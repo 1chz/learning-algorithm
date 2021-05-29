@@ -28,3 +28,4 @@ for _ in range(N):
     ans = max(ans, winner(lst))
 
 print(ans)
+#feat(Jeongmu-Jo): [BOJ, 2484] 주사위 네개
