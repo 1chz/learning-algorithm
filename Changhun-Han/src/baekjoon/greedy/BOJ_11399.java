@@ -50,7 +50,7 @@ public class BOJ_11399 {
             StringTokenizer st = new StringTokenizer(br.readLine());
             
             int[] inputs = new int[N + 1];
-            while(N-- > 0) {
+            while(0 < N--) {
                 inputs[parseInt(st.nextToken())]++;
             }
             
