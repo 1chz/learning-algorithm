@@ -17,4 +17,4 @@ for i in range(1, n+1):
         print('NO')
         exit(0)
 print('\n'.join(result))
-#feat(Jeongmu-Jo): [BOJ, 1012] 유기농 배추
+#feat(Jeongmu-Jo): [BOJ, 1874] 스택 수열
