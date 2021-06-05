@@ -13,7 +13,6 @@ public class BOJ_1343 {
     
     public static void main(String[] args) throws IOException {
         try(BufferedReader br = new BufferedReader(new InputStreamReader(System.in))) {
-            
             String s = br.readLine()
                          .replaceAll("X{4}", "AAAA")
                          .replaceAll("X{2}", "BB");
