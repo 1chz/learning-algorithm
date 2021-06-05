@@ -15,7 +15,7 @@ public class BOJ_11282 {
     public static void main (String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int index = parseInt(br.readLine()) + 44031;
-        System.out.println(Character.toString(index));
+        System.out.println((char) index);
         br.close();
     }
     
