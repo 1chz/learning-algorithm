@@ -30,3 +30,6 @@ class Solution:
         #     curr = max(temp +num, prev)
 
         # return curr
+
+        # Time Complexity - trasverse once - O(n)
+        # Space Complexity -store constants - O(1)

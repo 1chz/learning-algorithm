@@ -72,3 +72,6 @@ class Solution:
     #         return [rob, not_rob]
 
     # return max(helper(root))
+
+    # Time Complexity - exploring all nodes - O(n)
+    # Space Complexity - stack to carry out recursion - O(n)
