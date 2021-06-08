@@ -49,3 +49,26 @@ class Solution:
 
         return recursion(root, False) # 루트 위의 노드는 털리지 않음
         
+    # recursion top-top
+    # def rob(self, root:TreeNode) -> int:
+    #     #recurs function as *helper*
+    #     # max value it can get starting from the node
+    #     def helper(node):
+    #         # basic case
+    #         if not node:
+    #             return (0, 0)
+
+    #         left = helper(node.left)
+    #         right = helper(node.right)
+
+    #         # two choices - rob this or not?
+
+    #         # if we rob this node, we cannot rob its children
+    #         rob = self.val + left[1] + right[1]
+
+    #         # if we do not rob this node, we can either rob / not rob its children
+    #         not_rob = max(left) + max(right)
+
+    #         return [rob, not_rob]
+
+    # return max(helper(root))
