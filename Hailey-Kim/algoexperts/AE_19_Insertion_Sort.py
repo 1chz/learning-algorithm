@@ -12,7 +12,7 @@ def insertionSort(array):
 			j -= 1
 	return array
 
-	# O(n) T, O(1) S
+	# Best - O(n) T, O(1) S, Avg, Worst - O(n^2) T, O(1) S
     
 			
 			
