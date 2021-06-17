@@ -5,6 +5,7 @@ Move Element to End
 
 """
 def moveElementToEnd(array, toMove):
+    # O(n) T,O(1)S
     ptr, ptr2 = 0, len(array) - 1
     while ptr < ptr2:
         while ptr < ptr2 and array[ptr2]==toMove:
@@ -15,5 +16,3 @@ def moveElementToEnd(array, toMove):
         ptr += 1
 
     return array 
-
-    
