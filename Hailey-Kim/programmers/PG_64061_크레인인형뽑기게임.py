@@ -3,6 +3,8 @@
 https://programmers.co.kr/learn/courses/30/lessons/64061
 06/21/2021
 """
+# O(m x n) T where m is the num of elements in the moves array and n is the number of rows in board
+# O(m) S
 def solution(board, moves):
     answer = 0
     stack = []
