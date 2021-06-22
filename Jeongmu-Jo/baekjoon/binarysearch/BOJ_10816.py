@@ -11,9 +11,11 @@ for key_card in num_cards:
     else:
         dict[key_card] = 1 
 
-for key in m_list:
-    if key in dict:
-        print(dict[key], end = " ")
-    else:
-        print(0, end = " ")
+#for key in m_list:
+#    if key in dict:
+#        print(dict[key], end = " ")
+#    else:
+#        print(0, end = " ")
+
+print(' '.join(str(dict[key]) if key in dict else '0' for key in m_list))
 #feat(Jeongmu-Jo): [BOJ, 10816] 숫자 카드2
