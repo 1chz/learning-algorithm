@@ -1,5 +1,5 @@
 """
-징검다리 건너기
+징검다리 건너가기
 https://programmers.co.kr/learn/courses/30/lessons/64062
 06/21/2021
 """
