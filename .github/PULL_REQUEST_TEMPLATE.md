@@ -1,5 +1,4 @@
-# :ballot_box_with_check:***Weekly Pull Request*** 
-
+# :ballot_box_with_check:***Weekly Pull Request***
 
 - ***Name*** : {이름}
 - ***Github*** : {이메일}
