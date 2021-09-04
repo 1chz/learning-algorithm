@@ -1,5 +1,4 @@
 #include <iostream>
-#include <map>
 #include <set>
 #include <vector>
 
@@ -13,23 +12,13 @@ int main()
   int n, k;
   int tmp;
   cin >> n >> k;
-  map<int, int> m;
   vector<int> input;
-  map<int, vector<int>> idxes;
+  vector<vector<int>> idxes(k+1);
 
   for (int i=0; i<k; i++) {
     cin >> tmp;
     input.push_back(tmp);
-
-    if (m.find(tmp) == m.end()){
-      m.insert({tmp, 1});
-      idxes.insert({tmp, vector<int>(1,i)});
-      // cout << idxes[tmp][0] << "\n";
-    } else {
-      m[tmp]= m[tmp]+1;
-      idxes[tmp].push_back(i);
-      // cout << idxes[tmp][0] << "\n";
-    }
+    idxes[tmp].push_back(i);
   }
 
   set<int> s;
@@ -39,14 +28,11 @@ int main()
 
     if (s.size() < n) {
       s.insert(id);
-      m[id]--;
       idxes[id].erase(idxes[id].begin(), idxes[id].begin()+1);
     } else if (s.find(id) != s.end()){
-      m[id]--;
       idxes[id].erase(idxes[id].begin(), idxes[id].begin()+1);
     }
     else {
-      // cout << "*\n"; 
       int mx = 0;
       int val = -1;
 
@@ -63,7 +49,6 @@ int main()
       s.erase(val);
       s.insert(id);
       idxes[id].erase(idxes[id].begin(),idxes[id].begin() +1);
-      // cout << val << " popped . " <<  id << " inserted\n";
       ans++;
     } 
   }
