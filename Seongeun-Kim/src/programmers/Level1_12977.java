@@ -1,7 +1,7 @@
 package programmers;
 
 import java.util.ArrayList;
-class Level1_1 {
+class Level1_12977 {
     public int solution(int[] nums) {
 
         int answer = 0;
