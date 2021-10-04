@@ -1,7 +1,7 @@
 package programmers;
 
 public class Leve1_84331 {
-    
+
     class Solution {
         public int solution(int n) {
 
