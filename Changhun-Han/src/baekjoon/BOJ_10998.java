@@ -1,4 +1,4 @@
-package baekjoon;
+package src.baekjoon;
 
 import java.util.Scanner;
 
@@ -8,7 +8,7 @@ import java.util.Scanner;
  * </a>
  */
 public class BOJ_10998 {
-    
+
     public static void main (String[] args) {
         Scanner scanner = new Scanner(System.in);
         int A = scanner.nextInt();
@@ -16,5 +16,5 @@ public class BOJ_10998 {
         System.out.println(A * B);
         scanner.close();
     }
-    
+
 }

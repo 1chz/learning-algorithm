@@ -1,4 +1,4 @@
-package baekjoon.queue;
+package src.baekjoon.queue;
 
 import java.io.*;
 import java.util.LinkedList;
@@ -12,18 +12,18 @@ import static java.lang.Integer.parseInt;
  * </a>
  */
 public class BOJ_18258 {
-    
+
     public static void main (String[] args) throws IOException {
-        
+
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-        
+
         int N = parseInt(br.readLine());
-        
+
         LinkedList q = new LinkedList<>();
-        
+
         StringBuilder sb = new StringBuilder();
-        
+
         while(0 < N--) {
             StringTokenizer st = new StringTokenizer(br.readLine());
             String s = st.nextToken();
@@ -66,12 +66,12 @@ public class BOJ_18258 {
                 }
             }
         }
-        
+
         bw.write(sb.toString());
-        
+
         bw.flush();
         bw.close();
         br.close();
     }
-    
+
 }

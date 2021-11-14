@@ -1,4 +1,4 @@
-package baekjoon;
+package src.baekjoon;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -13,12 +13,12 @@ import static java.lang.Integer.parseInt;
  * </a>
  */
 public class BOJ_2522 {
-    
+
     public static void main (String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
         int N = parseInt(st.nextToken());
-        
+
         for (int i = 1; i <= N; i++) {
             for (int j = 1; j <= N - i; j++) {
                 System.out.print(" ");
@@ -28,7 +28,7 @@ public class BOJ_2522 {
             }
             System.out.println();
         }
-        
+
         for (int i = 1; i <= N - 1; i++) {
             for (int j = 1; j <= N - ( N - i ); j++) {
                 System.out.print(" ");
@@ -42,5 +42,5 @@ public class BOJ_2522 {
         }
         br.close();
     }
-    
+
 }

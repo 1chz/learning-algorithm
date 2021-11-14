@@ -1,4 +1,4 @@
-package baekjoon;
+package src.baekjoon;
 
 /**
  * @see <a href="https://www.acmicpc.net/problem/baekjoon_15733">

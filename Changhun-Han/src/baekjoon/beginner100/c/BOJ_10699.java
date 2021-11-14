@@ -1,4 +1,4 @@
-package baekjoon.beginner100.c;
+package src.baekjoon.beginner100.c;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -9,10 +9,10 @@ import java.time.format.DateTimeFormatter;
  * </a>
  */
 public class BOJ_10699 {
-    
+
     public static void main (String[] args) throws Exception {
         DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
         System.out.println(formatter.format(LocalDateTime.now()));
     }
-    
+
 }

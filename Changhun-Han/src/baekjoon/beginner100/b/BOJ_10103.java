@@ -1,4 +1,4 @@
-package baekjoon.beginner100.b;
+package src.baekjoon.beginner100.b;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -13,10 +13,10 @@ import static java.lang.Integer.parseInt;
  * </a>
  */
 public class BOJ_10103 {
-    
+
     public static void main (String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        
+
         int A = 100;
         int B = 100;
         int N = parseInt(br.readLine());
@@ -38,5 +38,5 @@ public class BOJ_10103 {
         System.out.println(B);
         br.close();
     }
-    
+
 }

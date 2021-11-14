@@ -1,4 +1,4 @@
-package baekjoon.greedy;
+package src.baekjoon.greedy;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -14,18 +14,18 @@ import static java.util.Arrays.sort;
  * </a>
  */
 public class BOJ_1758 {
-    
+
     public static void main(String[] args) throws IOException {
         try(BufferedReader br = new BufferedReader(new InputStreamReader(System.in))) {
             int N = parseInt(br.readLine());
             Integer[] tips = new Integer[N];
-            
+
             for(int i = 0; i < N; i++) {
                 tips[i] = parseInt(br.readLine());
             }
-            
+
             sort(tips, Collections.reverseOrder());
-            
+
             long sum = 0;
             for(int i = 0; i < N; i++) {
                 int tip = tips[i] - ((i + 1) - 1);
@@ -37,5 +37,5 @@ public class BOJ_1758 {
             System.out.println(sum);
         }
     }
-    
+
 }

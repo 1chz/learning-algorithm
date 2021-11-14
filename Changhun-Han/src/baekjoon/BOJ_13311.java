@@ -1,4 +1,4 @@
-package baekjoon;
+package src.baekjoon;
 
 import java.io.IOException;
 
@@ -8,9 +8,9 @@ import java.io.IOException;
  * </a>
  */
 public class BOJ_13311 {
-    
+
     public static void main (String[] args) throws IOException {
         System.out.println("-1");
     }
-    
+
 }

@@ -1,4 +1,4 @@
-package baekjoon.beginner100.d;
+package src.baekjoon.beginner100.d;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -14,7 +14,7 @@ import static java.lang.Math.sqrt;
  * </a>
  */
 public class BOJ_14264 {
-    
+
     public static void main (String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         double c = parseInt(br.readLine());
@@ -23,5 +23,5 @@ public class BOJ_14264 {
         System.out.println(( a * 2 * b ) / 2);
         br.close();
     }
-    
+
 }

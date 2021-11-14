@@ -1,4 +1,4 @@
-package baekjoon.beginner100.e;
+package src.baekjoon.beginner100.e;
 
 /**
  * @see <a href="https://www.acmicpc.net/problem/15962">
@@ -6,9 +6,9 @@ package baekjoon.beginner100.e;
  * </a>
  */
 public class BOJ_15962 {
-    
+
     public static void main (String[] args) {
         System.out.println("파이팅!!");
     }
-    
+
 }

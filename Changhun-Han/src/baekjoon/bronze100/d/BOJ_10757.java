@@ -1,4 +1,4 @@
-package baekjoon.bronze100.d;
+package src.baekjoon.bronze100.d;
 
 import java.io.*;
 import java.math.BigInteger;
@@ -10,19 +10,19 @@ import java.util.StringTokenizer;
  * </a>
  */
 public class BOJ_10757 {
-    
+
     public static void main (String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-        
+
         StringTokenizer st = new StringTokenizer(br.readLine());
         BigInteger A = new BigInteger(st.nextToken());
         BigInteger B = new BigInteger(st.nextToken());
-        
+
         bw.write(A.add(B).toString());
         bw.flush();
         bw.close();
         br.close();
     }
-    
+
 }

@@ -1,4 +1,4 @@
-package baekjoon;
+package src.baekjoon;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -12,11 +12,11 @@ import static java.lang.Integer.parseInt;
  * </a>
  */
 public class BOJ_17362 {
-    
+
     public static void main (String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int N = parseInt(br.readLine());
-        
+
         if (1 <= N % 8 && N % 8 <= 5) {
             System.out.println(N % 8);
         }
@@ -31,5 +31,5 @@ public class BOJ_17362 {
         }
         br.close();
     }
-    
+
 }

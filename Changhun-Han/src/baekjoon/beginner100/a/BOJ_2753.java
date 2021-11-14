@@ -1,4 +1,4 @@
-package baekjoon.beginner100.a;
+package src.baekjoon.beginner100.a;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -12,11 +12,11 @@ import static java.lang.Integer.parseInt;
  * </a>
  */
 public class BOJ_2753 {
-    
+
     public static void main (String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int year = parseInt(br.readLine());
-        
+
         if (year < 1 || year > 4000) {
             System.out.println("잘못 입력하셨습니다.");
         }
@@ -31,5 +31,5 @@ public class BOJ_2753 {
         }
         br.close();
     }
-    
+
 }

@@ -1,4 +1,4 @@
-package baekjoon.bronze100.d;
+package src.baekjoon.bronze100.d;
 
 import java.io.*;
 import java.util.StringTokenizer;
@@ -12,19 +12,19 @@ import static java.util.Arrays.stream;
  * </a>
  */
 public class BOJ_10813 {
-    
+
     public static void main (String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         StringTokenizer st;
         StringBuilder sb = new StringBuilder();
-        
+
         st = new StringTokenizer(br.readLine());
         int N = parseInt(st.nextToken());
         int M = parseInt(st.nextToken());
-        
+
         int[] list = new int[N];
-        
+
         for(int i = 0; i < N; i++) {
             list[i] = i + 1;
         }
@@ -36,14 +36,14 @@ public class BOJ_10813 {
             list[n1] = list[n2];
             list[n2] = temp;
         }
-        
+
         stream(list)
                 .forEach(o -> sb.append(o + " "));
-        
+
         bw.write(sb.toString());
         bw.flush();
         bw.close();
         br.close();
     }
-    
+
 }

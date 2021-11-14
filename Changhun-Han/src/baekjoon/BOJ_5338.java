@@ -1,4 +1,4 @@
-package baekjoon;
+package src.baekjoon;
 
 /**
  * @see <a href="https://www.acmicpc.net/problem/5338">
@@ -6,7 +6,7 @@ package baekjoon;
  * </a>
  */
 public class BOJ_5338 {
-    
+
     public static void main (String[] args) {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append("       _.-;;-._\n")
@@ -16,5 +16,5 @@ public class BOJ_5338 {
                      .append("'-..-'|_.-''-._|");
         System.out.println(stringBuilder);
     }
-    
+
 }

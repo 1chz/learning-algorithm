@@ -1,4 +1,4 @@
-package baekjoon;
+package src.baekjoon;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -11,7 +11,7 @@ import java.util.StringTokenizer;
  * </a>
  */
 public class BOJ_14924 {
-    
+
     public static void main (String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
@@ -21,5 +21,5 @@ public class BOJ_14924 {
         System.out.println(T * (D / (S * 2)));
         br.close();
     }
-    
+
 }

@@ -1,4 +1,4 @@
-package baekjoon.bronze100.c;
+package src.baekjoon.bronze100.c;
 
 import java.io.*;
 import java.util.stream.Stream;
@@ -9,25 +9,25 @@ import java.util.stream.Stream;
  * </a>
  */
 public class BOJ_3009 {
-    
+
     public static void main (String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-        
+
         int[] point1 = Stream.of(br.readLine().split(" "))
                              .mapToInt(Integer :: parseInt)
                              .toArray();
-        
+
         int[] point2 = Stream.of(br.readLine().split(" "))
                              .mapToInt(Integer :: parseInt)
                              .toArray();
-    
+
         int[] point3 = Stream.of(br.readLine().split(" "))
                              .mapToInt(Integer :: parseInt)
                              .toArray();
-        
+
         int X, Y;
-        
+
         if(point1[0] == point2[0]) {
             X = point3[0];
         }
@@ -37,7 +37,7 @@ public class BOJ_3009 {
         else {
             X = point1[0];
         }
-        
+
         if(point1[1] == point2[1]) {
             Y = point3[1];
         }
@@ -47,11 +47,11 @@ public class BOJ_3009 {
         else {
             Y = point1[1];
         }
-        
+
         bw.write(X + " " + Y);
         bw.flush();
         bw.close();
         br.close();
     }
-    
+
 }

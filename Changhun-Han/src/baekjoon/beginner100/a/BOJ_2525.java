@@ -1,4 +1,4 @@
-package baekjoon.beginner100.a;
+package src.baekjoon.beginner100.a;
 
 import java.io.BufferedReader;
 import java.io.IOException;

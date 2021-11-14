@@ -1,4 +1,4 @@
-package baekjoon.beginner100.e;
+package src.baekjoon.beginner100.e;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -13,21 +13,21 @@ import static java.lang.Long.parseLong;
  * </a>
  */
 public class BOJ_15964 {
-    
+
     public static void main (String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
-        
+
         long A = parseLong(st.nextToken());
         long B = parseLong(st.nextToken());
-        
+
         if (A == B) {
             System.out.println(0);
             return;
         }
-        
+
         System.out.println(( A + B ) * ( A - B ));
-        
+
     }
-    
+
 }

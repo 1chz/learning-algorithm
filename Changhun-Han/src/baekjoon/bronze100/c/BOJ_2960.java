@@ -1,4 +1,4 @@
-package baekjoon.bronze100.c;
+package src.baekjoon.bronze100.c;
 
 import java.io.*;
 import java.util.StringTokenizer;
@@ -12,24 +12,24 @@ import static java.lang.String.valueOf;
  * </a>
  */
 public class BOJ_2960 {
-    
+
     public static void main (String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         StringBuilder sb = new StringBuilder();
-        
+
         StringTokenizer st = new StringTokenizer(br.readLine());
         int N = parseInt(st.nextToken());
         int K = parseInt(st.nextToken());
-        
+
         boolean[] prime = new boolean[N + 1];
-        
+
         for(int i = 2; i <= N; i++) {
             prime[i] = true;
         }
-        
+
         int count = 0;
-        
+
         Loop:
         for(int i = 2; i <= N; i++) {
             for(int j = i; j <= N; j += i) {
@@ -44,10 +44,10 @@ public class BOJ_2960 {
                 }
             }
         }
-        
+
         bw.flush();
         bw.close();
         br.close();
     }
-    
+
 }

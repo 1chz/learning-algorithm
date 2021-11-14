@@ -1,4 +1,4 @@
-package baekjoon.greedy;
+package src.baekjoon.greedy;
 
 import static java.lang.Integer.parseInt;
 

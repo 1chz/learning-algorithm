@@ -1,4 +1,4 @@
-package baekjoon;
+package src.baekjoon;
 
 import java.io.IOException;
 import java.util.Scanner;
@@ -9,12 +9,12 @@ import java.util.Scanner;
  * </a>
  */
 public class BOJ_16199 {
-    
+
     public static void main (String[] args) throws IOException {
         Scanner sc = new Scanner(System.in);
         int[] birthDay = {sc.nextInt(), sc.nextInt(), sc.nextInt()};
         int[] standardDay = {sc.nextInt(), sc.nextInt(), sc.nextInt()};
-        
+
         if (standardDay[1] - birthDay[1] > 0) {
             System.out.println(standardDay[0] - birthDay[0]);
         }
@@ -33,5 +33,5 @@ public class BOJ_16199 {
         System.out.println(standardDay[0] - birthDay[0]);
         sc.close();
     }
-    
+
 }

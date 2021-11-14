@@ -1,4 +1,4 @@
-package baekjoon.beginner100.e;
+package src.baekjoon.beginner100.e;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -11,7 +11,7 @@ import java.util.Arrays;
  * </a>
  */
 public class BOJ_20499 {
-    
+
     public static void main (String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int[] KDA = Arrays.stream(br.readLine()
@@ -27,5 +27,5 @@ public class BOJ_20499 {
         }
         br.close();
     }
-    
+
 }

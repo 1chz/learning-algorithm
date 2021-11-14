@@ -1,4 +1,4 @@
-package baekjoon.beginner100.b;
+package src.baekjoon.beginner100.b;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -12,17 +12,17 @@ import java.util.Scanner;
  * </a>
  */
 public class BOJ_10101 {
-    
+
     public static void main (String[] args) throws IOException {
         Scanner sc = new Scanner(System.in);
         List<Integer> list = new ArrayList<>(Arrays.asList(sc.nextInt(),
                                                            sc.nextInt(),
                                                            sc.nextInt()
                                                           ));
-        
+
         boolean equilateral = list.stream()
                                   .allMatch(o -> o == 60);
-        
+
         boolean isosceles = list.stream()
                                 .distinct()
                                 .count() == 2
@@ -30,7 +30,7 @@ public class BOJ_10101 {
                             list.stream()
                                 .mapToInt(Integer :: intValue)
                                 .sum() == 180;
-        
+
         boolean scalene = list.stream()
                               .distinct()
                               .count() == 3
@@ -38,7 +38,7 @@ public class BOJ_10101 {
                           list.stream()
                               .mapToInt(Integer :: intValue)
                               .sum() == 180;
-        
+
         if (equilateral) {
             System.out.println("Equilateral");
         }
@@ -53,5 +53,5 @@ public class BOJ_10101 {
         }
         sc.close();
     }
-    
+
 }

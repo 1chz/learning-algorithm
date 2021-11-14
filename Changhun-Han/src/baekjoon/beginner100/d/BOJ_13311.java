@@ -1,4 +1,4 @@
-package baekjoon.beginner100.d;
+package src.baekjoon.beginner100.d;
 
 import java.io.IOException;
 

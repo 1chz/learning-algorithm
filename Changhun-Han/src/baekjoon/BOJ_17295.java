@@ -1,4 +1,4 @@
-package baekjoon;
+package src.baekjoon;
 
 import java.util.Scanner;
 
@@ -8,12 +8,12 @@ import java.util.Scanner;
  * </a>
  */
 public class BOJ_17295 {
-    
+
     public static void main (String[] args) {
         Scanner scanner = new Scanner(System.in);
         String str = scanner.nextLine();
         System.out.println("Avengers: Endgame");
         scanner.close();
     }
-    
+
 }

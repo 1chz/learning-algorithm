@@ -1,4 +1,4 @@
-package baekjoon;
+package src.baekjoon;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -12,17 +12,17 @@ import static java.lang.Integer.parseInt;
  * </a>
  */
 public class BOJ_5565 {
-    
+
     public static void main (String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        
+
         int total = parseInt(br.readLine());
         for (int i = 0; i < 9; i++) {
             total -= parseInt(br.readLine());
         }
-        
+
         System.out.println(total);
         br.close();
     }
-    
+
 }

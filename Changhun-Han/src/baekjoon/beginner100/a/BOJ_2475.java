@@ -1,4 +1,4 @@
-package baekjoon.beginner100.a;
+package src.baekjoon.beginner100.a;
 
 import java.util.Scanner;
 
@@ -8,7 +8,7 @@ import java.util.Scanner;
  * </a>
  */
 public class BOJ_2475 {
-    
+
     public static void main (String[] args) {
         Scanner scanner = new Scanner(System.in);
         double total = 0.0;
@@ -18,5 +18,5 @@ public class BOJ_2475 {
         System.out.println((int) total % 10);
         scanner.close();
     }
-    
+
 }
