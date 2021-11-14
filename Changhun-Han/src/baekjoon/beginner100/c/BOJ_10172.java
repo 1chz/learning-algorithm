@@ -1,4 +1,4 @@
-package baekjoon.beginner100.c;
+package src.baekjoon.beginner100.c;
 
 /**
  * @see <a href="https://www.acmicpc.net/problem/10172">
@@ -6,7 +6,7 @@ package baekjoon.beginner100.c;
  * </a>
  */
 public class BOJ_10172 {
-    
+
     public static void main (String[] args) {
         StringBuilder builder = new StringBuilder("|\\_/|\n")
                 .append("|q p|   /}\n")
@@ -15,5 +15,5 @@ public class BOJ_10172 {
                 .append("||_/=\\\\__|");
         System.out.println(builder);
     }
-    
+
 }

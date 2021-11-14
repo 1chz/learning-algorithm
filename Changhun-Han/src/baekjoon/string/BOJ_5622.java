@@ -1,4 +1,4 @@
-package baekjoon.string;
+package src.baekjoon.string;
 
 import java.io.IOException;
 
@@ -11,14 +11,14 @@ public class BOJ_5622 {
     public static void main(String[] args) throws IOException {
         int count = 0;
         int value;
-        
+
         while(true) {
             value = System.in.read();
-            
+
             if(value == '\n') {
                 break;
             }
-    
+
             if(value < 68) {
                 count += 3;
             }

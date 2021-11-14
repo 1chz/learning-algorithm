@@ -1,4 +1,4 @@
-package baekjoon;
+package src.baekjoon;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -13,14 +13,14 @@ import static java.lang.Integer.parseInt;
  * </a>
  */
 public class BOJ_10768 {
-    
+
     public static void main (String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int month = parseInt(br.readLine());
         int day = parseInt(br.readLine());
         LocalDate standard = LocalDate.of(2015, 2, 18);
         LocalDate date = LocalDate.of(2015, month, day);
-        
+
         if (date.isEqual(standard)) {
             System.out.println("Special");
         }
@@ -32,5 +32,5 @@ public class BOJ_10768 {
         }
         br.close();
     }
-    
+
 }

@@ -1,4 +1,4 @@
-package baekjoon.queue;
+package src.baekjoon.queue;
 
 import java.io.*;
 import java.util.Deque;
@@ -13,16 +13,16 @@ import static java.lang.Integer.parseInt;
  * </a>
  */
 public class BOJ_10866 {
-    
+
     public static void main (String[] args) throws IOException {
-        
+
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-        
+
         Deque<Integer> deque = new LinkedList<>();
         int iNum = 0;
         int N = parseInt(br.readLine());
-        
+
         while (0 < N--) {
             StringTokenizer st = new StringTokenizer(br.readLine());
             String s = st.nextToken();
@@ -57,5 +57,5 @@ public class BOJ_10866 {
         bw.close();
         br.close();
     }
-    
+
 }

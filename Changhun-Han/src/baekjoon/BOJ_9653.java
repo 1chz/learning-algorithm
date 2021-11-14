@@ -1,4 +1,4 @@
-package baekjoon;
+package src.baekjoon;
 
 /**
  * @see <a href="https://www.acmicpc.net/problem/9653">
@@ -6,7 +6,7 @@ package baekjoon;
  * </a>
  */
 public class BOJ_9653 {
-    
+
     public static void main (String[] args) {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append("    8888888888  888    88888\n")
@@ -22,5 +22,5 @@ public class BOJ_9653 {
                      .append("  88  88  88     88 88   88888888");
         System.out.println(stringBuilder);
     }
-    
+
 }

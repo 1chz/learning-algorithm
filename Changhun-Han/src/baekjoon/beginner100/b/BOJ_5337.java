@@ -1,4 +1,4 @@
-package baekjoon.beginner100.b;
+package src.baekjoon.beginner100.b;
 
 /**
  * @see <a href="httpstps://www.acmicpc.net/problem/5337">
@@ -6,7 +6,7 @@ package baekjoon.beginner100.b;
  * </a>
  */
 public class BOJ_5337 {
-    
+
     public static void main (String[] args) {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append(".  .   .\n")
@@ -14,5 +14,5 @@ public class BOJ_5337 {
                      .append("|/\\|(/.|(_.(_)[ | )(/.");
         System.out.println(stringBuilder);
     }
-    
+
 }

@@ -1,4 +1,4 @@
-package baekjoon.stack;
+package src.baekjoon.stack;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -13,11 +13,11 @@ import static java.lang.Integer.parseInt;
  * </a>
  */
 public class BOJ_10773 {
-    
+
     public static void main (String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int K = parseInt(br.readLine());
-        
+
         Stack<Integer> stack = new Stack<>();
         for (int i = 0; i < K; i++) {
             int money = parseInt(br.readLine());
@@ -28,7 +28,7 @@ public class BOJ_10773 {
                 stack.push(money);
             }
         }
-        
+
         long sum = 0;
         while (stack.size() > 0) {
             sum += stack.pop();
@@ -36,5 +36,5 @@ public class BOJ_10773 {
         System.out.println(sum);
         br.close();
     }
-    
+
 }

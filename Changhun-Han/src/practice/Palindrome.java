@@ -1,4 +1,4 @@
-package practice;
+package src.practice;
 
 public class Palindrome {
 

@@ -1,4 +1,4 @@
-package baekjoon.stack;
+package src.baekjoon.stack;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -12,14 +12,14 @@ import java.util.Stack;
  * https://www.acmicpc.net/problem/1918
  */
 public class BOJ_1918 {
-    
+
     public static void main (String[] args) throws IOException {
-        
+
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringBuilder sb = new StringBuilder();
         Stack<String> stack = new Stack<>();
         String s = br.readLine();
-        
+
         for (int i = 0; i < s.length(); i++) {
             if (s.substring(i, i + 1).matches("^[A-Z]*$")) {
                 sb.append(s.charAt(i));
@@ -27,7 +27,7 @@ public class BOJ_1918 {
             else if ("(".equals(s.substring(i, i + 1))) {
                 stack.push(s.substring(i, i + 1));
             }
-            
+
             else if (")".equals(s.substring(i, i + 1))) {
                 while (!"(".equals(stack.peek())) {
                     sb.append(stack.pop());
@@ -43,16 +43,16 @@ public class BOJ_1918 {
                 stack.push(s.substring(i, i + 1));
             }
         }
-        
+
         while (!stack.empty()) {
             sb.append(stack.pop());
         }
-        
+
         System.out.println(sb);
         br.close();
-        
+
     }
-    
+
     static int isPredicate (String s) {
         if ("(".equals(s)) {
             return 2;
@@ -64,8 +64,8 @@ public class BOJ_1918 {
             return 0;
         }
     }
-    
+
 }
-    
+
 
 

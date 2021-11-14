@@ -1,4 +1,4 @@
-package baekjoon.beginner100.e;
+package src.baekjoon.beginner100.e;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -10,7 +10,7 @@ import java.io.InputStreamReader;
  * </a>
  */
 public class BOJ_18108 {
-    
+
     public static void main (String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int beforeBuddha = Integer.parseInt(br.readLine());
@@ -18,5 +18,5 @@ public class BOJ_18108 {
         System.out.println(beforeChrist);
         br.close();
     }
-    
+
 }

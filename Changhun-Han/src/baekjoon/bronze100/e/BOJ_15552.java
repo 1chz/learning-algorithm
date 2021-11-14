@@ -1,4 +1,4 @@
-package baekjoon.bronze100.e;
+package src.baekjoon.bronze100.e;
 
 import java.io.*;
 import java.util.StringTokenizer;
@@ -11,7 +11,7 @@ import static java.lang.Integer.parseInt;
  * </a>
  */
 public class BOJ_15552 {
-    
+
     public static void main (String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));

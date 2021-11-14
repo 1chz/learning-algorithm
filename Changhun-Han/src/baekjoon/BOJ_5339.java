@@ -1,4 +1,4 @@
-package baekjoon;
+package src.baekjoon;
 
 /**
  * @see <a href="https://www.acmicpc.net/problem/5339">
@@ -6,7 +6,7 @@ package baekjoon;
  * </a>
  */
 public class BOJ_5339 {
-    
+
     public static void main (String[] args) {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append("     /~\\\n")
@@ -21,5 +21,5 @@ public class BOJ_5339 {
                      .append("|          |\n");
         System.out.println(stringBuilder);
     }
-    
+
 }

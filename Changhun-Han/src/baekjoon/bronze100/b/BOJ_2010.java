@@ -1,4 +1,4 @@
-package baekjoon.bronze100.b;
+package src.baekjoon.bronze100.b;
 
 import java.io.*;
 

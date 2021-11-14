@@ -1,4 +1,4 @@
-package baekjoon.bronze100.c;
+package src.baekjoon.bronze100.c;
 
 import java.io.*;
 import java.util.StringTokenizer;
@@ -11,14 +11,14 @@ import static java.lang.Integer.parseInt;
  * </a>
  */
 public class BOJ_2953 {
-    
+
     public static void main (String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-        
+
         int highestScore = 0;
         int higher = 0;
-        
+
         for(int i = 1; i <= 5; i++) {
             StringTokenizer st = new StringTokenizer(br.readLine());
             int sum = 0;
@@ -30,14 +30,14 @@ public class BOJ_2953 {
                 higher = i;
             }
         }
-        
+
         bw.write(higher + " " + highestScore);
         bw.flush();
         bw.close();
         br.close();
-        
+
     }
-    
+
 }
 
 

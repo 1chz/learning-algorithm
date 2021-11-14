@@ -1,4 +1,4 @@
-package baekjoon.beginner100.e;
+package src.baekjoon.beginner100.e;
 
 import java.io.IOException;
 import java.util.Scanner;
@@ -11,7 +11,7 @@ import static java.lang.Math.min;
  * </a>
  */
 public class BOJ_19698 {
-    
+
     public static void main (String[] args) throws IOException {
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt();
@@ -22,5 +22,5 @@ public class BOJ_19698 {
         H /= L;
         System.out.println(min(W * H, N));
     }
-    
+
 }

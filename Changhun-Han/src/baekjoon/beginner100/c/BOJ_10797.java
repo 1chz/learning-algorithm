@@ -1,4 +1,4 @@
-package baekjoon.beginner100.c;
+package src.baekjoon.beginner100.c;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -13,14 +13,14 @@ import static java.lang.Integer.parseInt;
  * </a>
  */
 public class BOJ_10797 {
-    
+
     public static void main (String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer cars;
         int count = 0;
         int day = parseInt(br.readLine());
         cars = new StringTokenizer(br.readLine());
-        
+
         for (int i = 0; i < 5; i++) {
             if (day == parseInt(cars.nextToken())) {
                 count++;
@@ -29,5 +29,5 @@ public class BOJ_10797 {
         System.out.println(count);
         br.close();
     }
-    
+
 }

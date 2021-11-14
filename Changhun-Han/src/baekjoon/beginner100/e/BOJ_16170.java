@@ -1,4 +1,4 @@
-package baekjoon.beginner100.e;
+package src.baekjoon.beginner100.e;
 
 import java.time.LocalDateTime;
 
@@ -8,11 +8,11 @@ import java.time.LocalDateTime;
  * </a>
  */
 public class BOJ_16170 {
-    
+
     public static void main (String[] args) {
         System.out.println(LocalDateTime.now().getYear());
         System.out.println(LocalDateTime.now().getMonth().getValue());
         System.out.println(LocalDateTime.now().getDayOfMonth());
     }
-    
+
 }

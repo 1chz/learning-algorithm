@@ -1,4 +1,4 @@
-package baekjoon;
+package src.baekjoon;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -12,7 +12,7 @@ import static java.lang.Integer.parseInt;
  * </a>
  */
 public class BOJ_16486 {
-    
+
     public static void main (String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         double pi = 3.141592;
@@ -21,5 +21,5 @@ public class BOJ_16486 {
         System.out.println(( d1 * 2 ) + ( 2 * pi * d2 ));
         br.close();
     }
-    
+
 }
