@@ -1,4 +1,4 @@
-package baekjoon.beginner100.d;
+package src.baekjoon.beginner100.d;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -12,7 +12,7 @@ import static java.lang.Integer.parseInt;
  * </a>
  */
 public class BOJ_14470 {
-    
+
     public static void main (String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int A = parseInt(br.readLine());
@@ -20,17 +20,17 @@ public class BOJ_14470 {
         int C = parseInt(br.readLine());
         int D = parseInt(br.readLine());
         int E = parseInt(br.readLine());
-        
+
         boolean isNotFrozen = A > 0;
-        
+
         if (isNotFrozen) {
             System.out.println(( B - A ) * E);
         }
         else {
             System.out.println(Math.abs(A) * C + D + ( B * E ));
         }
-        
+
         br.close();
     }
-    
+
 }

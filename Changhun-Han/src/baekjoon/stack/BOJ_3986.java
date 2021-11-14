@@ -1,4 +1,4 @@
-package baekjoon.stack;
+package src.baekjoon.stack;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -13,10 +13,10 @@ import static java.lang.Integer.parseInt;
  * </a>
  */
 public class BOJ_3986 {
-    
+
     public static void main (String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        
+
         int count = 0;
         int N = parseInt(br.readLine());
         while (0 < N--) {
@@ -40,8 +40,8 @@ public class BOJ_3986 {
         System.out.println(count);
         br.close();
     }
-    
+
 }
-    
+
 
 

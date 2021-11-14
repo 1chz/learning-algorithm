@@ -1,4 +1,4 @@
-package baekjoon.beginner100.a;
+package src.baekjoon.beginner100.a;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -11,12 +11,12 @@ import java.util.StringTokenizer;
  * </a>
  */
 public class BOJ_1001 {
-    
+
     public static void main (String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
         System.out.println(Integer.parseInt(st.nextToken()) - Integer.parseInt(st.nextToken()));
         br.close();
     }
-    
+
 }

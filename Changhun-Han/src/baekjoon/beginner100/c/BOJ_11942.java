@@ -1,4 +1,4 @@
-package baekjoon.beginner100.c;
+package src.baekjoon.beginner100.c;
 
 /**
  * @see <a href="https://www.acmicpc.net/problem/11942">
@@ -6,9 +6,9 @@ package baekjoon.beginner100.c;
  * </a>
  */
 public class BOJ_11942 {
-    
+
     public static void main (String[] args) {
         System.out.println("고려대학교");
     }
-    
+
 }

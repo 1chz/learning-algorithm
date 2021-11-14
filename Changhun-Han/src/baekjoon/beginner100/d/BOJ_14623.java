@@ -1,4 +1,4 @@
-package baekjoon.beginner100.d;
+package src.baekjoon.beginner100.d;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -11,7 +11,7 @@ import java.math.BigInteger;
  * </a>
  */
 public class BOJ_14623 {
-    
+
     public static void main (String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BigInteger B1 = new BigInteger(br.readLine(), 2);
@@ -20,5 +20,5 @@ public class BOJ_14623 {
         System.out.println(result.toString(2));
         br.close();
     }
-    
+
 }

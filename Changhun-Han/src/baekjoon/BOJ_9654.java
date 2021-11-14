@@ -1,4 +1,4 @@
-package baekjoon;
+package src.baekjoon;
 
 import java.io.IOException;
 
@@ -8,7 +8,7 @@ import java.io.IOException;
  * </a>
  */
 public class BOJ_9654 {
-    
+
     public static void main (String[] args) throws IOException {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append("SHIP NAME      CLASS          DEPLOYMENT IN SERVICE\n")
@@ -19,5 +19,5 @@ public class BOJ_9654 {
                      .append("Royal Cruiser  Light Combat   Limited    4         \n");
         System.out.println(stringBuilder);
     }
-    
+
 }

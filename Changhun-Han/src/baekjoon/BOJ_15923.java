@@ -1,4 +1,4 @@
-package baekjoon;
+package src.baekjoon;
 
 import java.io.IOException;
 import java.util.Scanner;
@@ -11,18 +11,18 @@ import static java.lang.Math.abs;
  * </a>
  */
 public class BOJ_15923 {
-    
+
     public static void main (String[] args) throws IOException {
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt();
         Point[] points = new Point[N];
-        
+
         int total = 0;
-        
+
         for (int i = 0; i < N; i++) {
             points[i] = new Point(sc.nextInt(), sc.nextInt());
         }
-        
+
         for (int i = 0; i < N - 1; i++) {
             total += abs(points[i].x - points[i + 1].x);
             total += abs(points[i].y - points[i + 1].y);
@@ -31,22 +31,22 @@ public class BOJ_15923 {
                 total += abs(points[0].y - points[i + 1].y);
             }
         }
-        
+
         System.out.println(total);
-        
+
         sc.close();
     }
-    
+
     public static class Point {
-        
+
         int x;
         int y;
-        
+
         public Point (int x, int y) {
             this.x = x;
             this.y = y;
         }
-        
+
     }
-    
+
 }

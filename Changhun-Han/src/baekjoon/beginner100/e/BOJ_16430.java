@@ -1,4 +1,4 @@
-package baekjoon.beginner100.e;
+package src.baekjoon.beginner100.e;
 
 import java.util.Scanner;
 

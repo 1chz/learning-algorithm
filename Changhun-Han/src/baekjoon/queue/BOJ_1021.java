@@ -1,4 +1,4 @@
-package baekjoon.queue;
+package src.baekjoon.queue;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -13,24 +13,24 @@ import static java.lang.Integer.parseInt;
  * </a>
  */
 public class BOJ_1021 {
-    
+
     public static void main (String[] args) throws IOException {
-        
+
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
-        
+
         List<Integer> list = new ArrayList<>();
         StringTokenizer st = new StringTokenizer(br.readLine());
         int N = parseInt(st.nextToken());
         int M = parseInt(st.nextToken());
         int ans = 0;
-        
+
         for (int i = 1; i <= N; i++) {
             list.add(i);
         }
-        
+
         st = new StringTokenizer(br.readLine());
-        
+
         for (int i = 0; i < M; i++) {
             int num = parseInt(st.nextToken());
             while (true) {
@@ -49,12 +49,12 @@ public class BOJ_1021 {
                 }
             }
         }
-    
+
         bw.write(Integer.toString(ans));
-    
+
         bw.flush();
         bw.close();
         br.close();
     }
-    
+
 }

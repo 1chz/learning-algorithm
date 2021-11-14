@@ -1,4 +1,4 @@
-package baekjoon.beginner100.d;
+package src.baekjoon.beginner100.d;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -15,19 +15,19 @@ import static java.util.Arrays.sort;
  * </a>
  */
 public class BOJ_13866 {
-    
+
     public static void main (String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
-        
+
         int[] skills = new int[4];
         for (int i = 0; i < 4; i++) {
             skills[i] = parseInt(st.nextToken());
         }
         sort(skills);
-        
+
         System.out.print(abs((skills[0] + skills[3]) - (skills[1] + skills[2])));
         br.close();
     }
-    
+
 }

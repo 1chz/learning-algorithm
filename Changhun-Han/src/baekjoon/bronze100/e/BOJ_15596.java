@@ -1,4 +1,4 @@
-package baekjoon.bronze100.e;
+package src.baekjoon.bronze100.e;
 
 /**
  * @see <a href="https://www.acmicpc.net/problem/15596">
@@ -6,7 +6,7 @@ package baekjoon.bronze100.e;
  * </a>
  */
 public class BOJ_15596 {
-    
+
     long sum (int[] a) {
         long ans = 0;
         for(long element : a) {
@@ -14,5 +14,5 @@ public class BOJ_15596 {
         }
         return ans;
     }
-    
+
 }

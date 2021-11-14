@@ -1,4 +1,4 @@
-package baekjoon.stack;
+package src.baekjoon.stack;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -10,14 +10,14 @@ import java.util.Stack;
  * </a>
  */
 public class BOJ_10799 {
-    
+
     public static void main (String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String s = br.readLine();
         Stack<Integer> stack = new Stack<>();
-        
+
         int bar = 0;
-        
+
         for (int i = 0; i < s.length(); i++) {
             if (s.charAt(i) == '(') {
                 stack.push(i);
@@ -36,8 +36,8 @@ public class BOJ_10799 {
         System.out.println(bar);
         br.close();
     }
-    
+
 }
-    
+
 
 

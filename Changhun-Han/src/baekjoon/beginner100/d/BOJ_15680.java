@@ -1,4 +1,4 @@
-package baekjoon.beginner100.d;
+package src.baekjoon.beginner100.d;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -12,7 +12,7 @@ import static java.lang.Integer.parseInt;
  * </a>
  */
 public class BOJ_15680 {
-    
+
     public static void main (String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         int N = parseInt(br.readLine());
@@ -24,5 +24,5 @@ public class BOJ_15680 {
         }
         br.close();
     }
-    
+
 }

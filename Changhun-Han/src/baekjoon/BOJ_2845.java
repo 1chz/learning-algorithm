@@ -1,4 +1,4 @@
-package baekjoon;
+package src.baekjoon;
 
 import java.io.IOException;
 import java.util.Scanner;
@@ -9,7 +9,7 @@ import java.util.Scanner;
  * </a>
  */
 public class BOJ_2845 {
-    
+
     public static void main (String[] args) throws IOException {
         Scanner sc = new Scanner(System.in);
         StringBuilder stringBuilder = new StringBuilder();
@@ -26,5 +26,5 @@ public class BOJ_2845 {
         System.out.println(stringBuilder);
         sc.close();
     }
-    
+
 }

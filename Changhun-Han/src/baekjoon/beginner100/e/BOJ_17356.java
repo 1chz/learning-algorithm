@@ -1,4 +1,4 @@
-package baekjoon.beginner100.e;
+package src.baekjoon.beginner100.e;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -13,7 +13,7 @@ import static java.lang.Integer.parseInt;
  * </a>
  */
 public class BOJ_17356 {
-    
+
     public static void main (String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
@@ -23,5 +23,5 @@ public class BOJ_17356 {
         System.out.println(1 / ( 1 + Math.pow(10, M) ));
         br.close();
     }
-    
+
 }

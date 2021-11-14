@@ -1,4 +1,4 @@
-package baekjoon.beginner100.c;
+package src.baekjoon.beginner100.c;
 
 /**
  * @see <a href="https://www.acmicpc.net/problem/10171">

@@ -1,4 +1,4 @@
-package baekjoon;
+package src.baekjoon;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -13,7 +13,7 @@ import static java.lang.Integer.parseInt;
  * </a>
  */
 public class BOJ_16204 {
-    
+
     public static void main (String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
@@ -23,5 +23,5 @@ public class BOJ_16204 {
         System.out.println(Math.min(M, K) + Math.min(N - M, N - K));
         br.close();
     }
-    
+
 }

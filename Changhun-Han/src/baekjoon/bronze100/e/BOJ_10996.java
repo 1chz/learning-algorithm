@@ -1,4 +1,4 @@
-package baekjoon.bronze100.e;
+package src.baekjoon.bronze100.e;
 
 import java.io.*;
 
@@ -10,14 +10,14 @@ import static java.lang.Integer.parseInt;
  * </a>
  */
 public class BOJ_10996 {
-    
+
     public static void main (String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
         StringBuilder sb = new StringBuilder();
-        
+
         int N = parseInt(br.readLine());
-        
+
         for(int i = 1; i <= N * 2; i++) {
             if(i % 2 == 1) {
                 for(int j = 1; j <= N; j++) {
@@ -29,7 +29,7 @@ public class BOJ_10996 {
                     }
                 }
             }
-            
+
             else {
                 for(int j = 1; j <= N; j++) {
                     if(j % 2 == 1) {
@@ -42,11 +42,11 @@ public class BOJ_10996 {
             }
             sb.append("\n");
         }
-        
+
         bw.write(sb.toString());
         bw.flush();
         bw.close();
         br.close();
     }
-    
+
 }

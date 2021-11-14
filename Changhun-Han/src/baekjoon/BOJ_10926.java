@@ -1,4 +1,4 @@
-package baekjoon;
+package src.baekjoon;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -9,7 +9,7 @@ import java.io.InputStreamReader;
  * </a>
  */
 public class BOJ_10926 {
-    
+
     public static void main (String[] args) throws Exception {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringBuilder stringBuilder = new StringBuilder();
@@ -18,5 +18,5 @@ public class BOJ_10926 {
         System.out.println(stringBuilder);
         br.close();
     }
-    
+
 }

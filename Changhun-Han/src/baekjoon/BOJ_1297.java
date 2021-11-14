@@ -1,4 +1,4 @@
-package baekjoon;
+package src.baekjoon;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -14,7 +14,7 @@ import static java.lang.Math.*;
  * </a>
  */
 public class BOJ_1297 {
-    
+
     public static void main (String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringTokenizer st = new StringTokenizer(br.readLine());
@@ -25,5 +25,5 @@ public class BOJ_1297 {
         System.out.printf("%d %d", (int) floor(height * diagonalRate), (int) floor(width * diagonalRate));
         br.close();
     }
-    
+
 }
