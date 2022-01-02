@@ -1,19 +1,8 @@
-# Algorithm & Data Structure
+# W40 - 스터디 종료
 
-* 브랜치명은 자신의 이름으로 한다 (ex. Changhun-Han)
-* 자신의 브랜치에만 커밋한다
-* 1문제당 1커밋을 원칙으로 한다
-* 커밋 메시지는 간결하고 명확하게 작성한다
-
-```
-feat(<branch>): [<플랫폼>, <문제번호>] <문제이름>
-
-<문제 링크>
-``` 
-
-# Example Commit Message
-```
-feat(changhun): [BOJ, 2557] Hello World
-
-https://www.acmicpc.net/problem/2557
-```
+- 기간: 2021-03-13 ~ 2022-01-02
+- 룰: 1주에 최소 1문제 이상 커밋하지 않을 경우 밴
+- 스터디 최초인원: 82명
+- 스터디 최종인원: 2명
+  - [한창훈](https://github.com/shirohoo)
+  - [정요한](https://github.com/ingyeoking13)
